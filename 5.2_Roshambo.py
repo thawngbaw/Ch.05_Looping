@@ -62,8 +62,6 @@ while game_quit == "n":
         break
 
 
-
-
 print()
 print()
 
