@@ -10,7 +10,7 @@ import random
 head = 0
 tail = 0
 for i in range(50):
-    c = (random.randint(0,1))
+    c = (random.randint(0, 1))
     if c == 0:
         head += 1
         print("head")
