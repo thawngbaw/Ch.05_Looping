@@ -5,14 +5,13 @@ The pseudo-code for how to code this game is in Chapter 5 of the Python Jedi boo
 
 '''
 
-
-done = False
 import random
-num_light_year = 0 #NUmber of mile
+done = False
+num_light_year = 0 # NUmber of mile
 tired_level = 0
 damage_level = 0
 distance_bandit_travel = -20
-a = 5            #amount of fuel
+a = 5            # amount of fuel
 e = "status check"
 b = "moderate speed"
 c = "full speed"
@@ -29,7 +28,7 @@ while not done:
     print(" D.Stop to collect supply from nearby planet")
     print(" E.status check")
     print(" Q.Give Up mission?")
-    user_player = input("enter your choice = ")
+    user_player = input("enter your choice = ") # ask user for their choice
 
     if user_player.lower() == "a":
         a -= 1
@@ -95,9 +94,12 @@ while not done:
 
     ocean = random.randint(1, 20)
     if ocean == 4:
+        print("You found an abandoned space ship")
         tired_level -= tired_level
-        reversed(a)
+        a -= a
         damage_level -= damage_level
+        print("Your ship has been refuel")
+        print("Your ship damage has been repaired")
     print()
     print()
     user_game_quit = input("Do you want to Give UP (Q, N) ")
@@ -113,7 +115,6 @@ while not done:
 
 print()
 print()
-
 
 
 

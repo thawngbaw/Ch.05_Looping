@@ -17,7 +17,7 @@ print("The total is:", total)
   2. Write a Python program that will use a FOR loop to print the even
      numbers from 2 to 100, inclusive.
 '''
-for i in range(2,102,2):
+for i in range(2, 102, 2):
     print(i)
 
 
