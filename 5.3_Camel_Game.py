@@ -7,7 +7,7 @@ The pseudo-code for how to code this game is in Chapter 5 of the Python Jedi boo
 
 import random
 done = False
-num_light_year = 0 # NUmber of mile
+num_light_year = 0  # NUmber of mile
 tired_level = 0
 damage_level = 0
 distance_bandit_travel = -20
