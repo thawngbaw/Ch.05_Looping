@@ -16,20 +16,24 @@ e = "status check"
 b = "moderate speed"
 c = "full speed"
 d = "stop for supply"
+print("You are 200 light years away from your home planet, because of some accident and you")
+print(" are being chase by space bandit")
+print()
+print("Try to get back to your home planet safely, without dying!!!")
+print()
+print("Here are your choice")
+print()
 while not done:
-    print("You are 200 light years away from your home planet, because of some accident and you")
-    print(" are being chase by space bandit")
-    print("Try to get back to your home planet safely, without dying!!!")
-    print()
-    print("Here are your choice")
+
     print(" A. take a rest")
     print(" B.Ahead normal speed")
     print(" C.Ahead full speed")
     print(" D.Stop to collect supply from nearby planet")
     print(" E.status check")
-    print(" Q.Give Up mission?")
-    user_player = input("enter your choice = ") # ask user for their choice
+    user_player = input("enter your choice = ")  # ask user for their choice
 
+    print()
+    print()
     if user_player.lower() == "a":
         a -= 1
         tired_level -= tired_level
@@ -56,6 +60,13 @@ while not done:
         print("-Number of light years travel", num_light_year)
         print("-Amount of fuel left", a)
         print("-Distance of bandit", distance_bandit_travel)
+        user_game_quit = input("Do you want to Give UP (Q, N) ")
+        quit_game = "Q"
+        if user_game_quit.upper() == "Q":
+            print("Number of light years travel =", num_light_year)
+            print("Amount of fuel left =", a)
+            print("Distance of bandit =", distance_bandit_travel)
+            done = True
 
     if not done and tired_level == 4:
             print("you are tired")
@@ -100,21 +111,8 @@ while not done:
         damage_level -= damage_level
         print("Your ship has been refuel")
         print("Your ship damage has been repaired")
-    print()
-    print()
-    user_game_quit = input("Do you want to Give UP (Q, N) ")
-    print()
-    print()
-    quit_game = "Q"
-    if user_game_quit.upper() == "Q":
-        print("Number of light years travel =", num_light_year)
-        print("Amount of fuel left =", a)
-        print("Distance of bandit =", distance_bandit_travel)
-        done = True
-
 
 print()
 print()
-
 
 
