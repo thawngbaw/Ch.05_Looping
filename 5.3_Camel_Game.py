@@ -61,6 +61,7 @@ while not done:
         print("-Amount of fuel left", a)
         print("-Distance of bandit", distance_bandit_travel)
         user_game_quit = input("Do you want to Give UP (Q, N) ")
+        print()
         quit_game = "Q"
         if user_game_quit.upper() == "Q":
             print("Number of light years travel =", num_light_year)
