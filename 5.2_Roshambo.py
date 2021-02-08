@@ -17,7 +17,7 @@ bot_1 = 0
 user_win = 0
 game_quit = "n"
 while game_quit == "n":
-    c = (random.randint(1,3))
+    c = (random.randint(1, 3))
 
     print("1 = rock \n2 = paper \n3 = scissor")
 
